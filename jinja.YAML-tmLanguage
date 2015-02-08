@@ -1,0 +1,25 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Jinja Syntax
+scopeName: source.jinja
+fileTypes: []
+uuid: 8287aa29-b2d2-45e8-9352-c271a90ccf33
+
+patterns:
+- name: constant.character
+  match: \{\{.+(\|.+)\}\}
+  captures:
+    '1': {
+        name: keyword.operator
+    }
+
+- name: constant.character
+  match: \{\{.+\}\}
+
+- name: constant.character
+  match: \{%.+%\}
+
+- name: comment.block
+  begin: "\\{#"
+  end: "#\\}"
+...

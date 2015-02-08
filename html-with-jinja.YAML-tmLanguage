@@ -1,0 +1,13 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+fileTypes: []
+firstLineMatch: ^{% extends ["'][^"']+["'] %}
+foldingStartMarker: (<(?i:(head|table|tr|div|style|script|ul|ol|form|dl))\b.*?>|{%\s*(block|filter|for|if|macro|raw))
+foldingStopMarker: (</(?i:(head|table|tr|div|style|script|ul|ol|form|dl))\b.*?>|{%\s*(endblock|endfilter|endfor|endif|endmacro|endraw)\s*%})
+name: HTML with Jinja2
+patterns:
+- {include: source.jinja}
+- {include: text.html.basic}
+scopeName: text.html.jinja
+uuid: ba4fe61b-04d8-4bc7-8b13-0cd44e8aa37d
+...
