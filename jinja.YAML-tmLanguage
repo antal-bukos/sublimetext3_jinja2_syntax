@@ -2,10 +2,11 @@
 ---
 name: Jinja Syntax
 scopeName: source.jinja
-fileTypes: []
+fileTypes: [html]
 uuid: 8287aa29-b2d2-45e8-9352-c271a90ccf33
 
 patterns:
+
 - name: constant.character
   match: \{\{.+(\|.+)\}\}
   captures:

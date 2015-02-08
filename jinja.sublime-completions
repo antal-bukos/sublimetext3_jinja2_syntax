@@ -1,16 +1,16 @@
 {
-    "scope": "source.jinja, text.html.jinja",
+    "scope": "text.html.jinja",
 
     "completions":
     [
         //control structures
-        { "trigger": "block\tjinja block", "contents": "{% block name %}\n{% endblock %}" },
-        { "trigger": "extends\tjinja extends", "contents": "{% extends \"filename.html\" %}" },
-        { "trigger": "for\tjinja for loop", "contents": "{% for item in list %}\n{% endfor %}" },
-        { "trigger": "if\tjinja if", "contents": "{% if condition %}\n{% else %}\n{% endif %}" },
-        { "trigger": "include\tjinja include", "contents": "{% include \"filename.html\" %}" },
-        { "trigger": "for\tjinja for loop", "contents": "{% for item in list %}\n{% endfor %}" },
-        { "trigger": "set\tjinja set", "contents": "{% set variable=value %}" },
+        { "trigger": "{% block\tjinja block", "contents": "block name %}\n{% endblock %" },
+        { "trigger": "{% extends\tjinja extends", "contents": "extends \"filename.html\" %" },
+        { "trigger": "{% for\tjinja for loop", "contents": "for item in list %}\n{% endfor %}" },
+        { "trigger": "{% if\tjinja if", "contents": "if condition %}\n{% else %}\n{% endif %}" },
+        { "trigger": "{% include\tjinja include", "contents": "include \"filename.html\" %}" },
+        { "trigger": "{% for\tjinja for loop", "contents": "for item in list %}\n{% endfor %}" },
+        { "trigger": "{% set\tjinja set", "contents": "set variable=value %}" },
 
         //builtin filters (http://jinja.pocoo.org/docs/dev/templates/#list-of-builtin-filters)
         { "trigger": "|abs\tjinja filter: absolute value", "contents": "abs" },
