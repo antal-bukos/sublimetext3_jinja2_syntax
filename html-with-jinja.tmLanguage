@@ -86,6 +86,20 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>keyword.operator</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\{\{.+(\|.+).*\}\}</string>
+			<key>name</key>
+			<string>support.class</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>string.quoted.double</string>
 				</dict>
 			</dict>

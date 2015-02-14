@@ -31,6 +31,7 @@ patterns:
         name: constant.character
     }
 
+
 - name: support.class
   match: \{\{.+(\|.+\(?)(\".*\")(\)?).*\}\}
   captures:
@@ -41,6 +42,13 @@ patterns:
         name: string.quoted.double
     }
     '3': {
+        name: keyword.operator
+    }
+
+- name: support.class
+  match: \{\{.+(\|.+).*\}\}
+  captures:
+    '1': {
         name: keyword.operator
     }
 
